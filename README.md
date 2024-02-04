@@ -1,7 +1,7 @@
 
 # Power of Prolog Interactive Tutorial
 
-This project is meant to serve as an interactive version of https://www.metalevel.at/prolog/introduction. It will teach you how to edit and work with Swi-Prolog projects naturally and the fundamentals of Prolog.
+This project is meant to serve as an interactive version of https://www.metalevel.at/prolog/introduction -- it will teach you how to edit and work with Swi-Prolog projects naturally and the fundamentals of Prolog.
 
 ## Getting started
 

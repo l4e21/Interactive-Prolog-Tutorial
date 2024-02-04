@@ -1,5 +1,16 @@
+% Remember this definition?
+% Our module is called facets_of_prolog, and it exports two predicates:
+% list_length (which takes two arguments) and call_example (which takes
+% one)
+
 :- module(facets_of_prolog, [list_length/2, call_example/1]).
-% This is how you use a module. In this case we are using clpfd to make reasoning about integers easier. https://www.swi-prolog.org/man/clpfd.html without it, reasoning about integers becomes a lot harder. We'll get into reasoning over finite domains more later!
+
+% As a necessary aside, the below is how you use a module.
+% In this case we are using clpfd to make reasoning about integers
+% easier. https://www.swi-prolog.org/man/clpfd.html without it, reasoning
+% about integers becomes a lot harder. We'll get into reasoning over
+% finite domains more later!
+
 :- use_module(library(clpfd)).
 
 %   * Prolog is a very simple language. *
@@ -49,8 +60,11 @@ list_length([_|Ls], N) :-
 
 % Complete the following exercises: In your running `swipl` command
 % line, run `[src/facets_of_prolog].` This compiles (or 'consults') the
-% current file. Now run the following predicates:
+% current file. Alternatively, you can run C-c C-b to compile to your
+% running process while the cursor is active in this file. Then you can
+% call the predicates.
 
+% Now try the following:
 % What happens if we call list_length([1,2,3], N). ?
 % What happens if we call list_length(Ls, 3). ?
 % What happens if we call list_length(Ls, L). ?
